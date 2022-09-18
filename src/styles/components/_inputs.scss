@@ -1,0 +1,48 @@
+.input-app {
+  border: 1px solid $border-grey;
+  border-radius: 4px;
+  color: $primary;
+  display: inline-block;
+  outline: none;
+  padding: 16px;
+  height: 50px;
+  width: 100%;
+
+  &::placeholder {
+    color: $light-grey;
+    font-size: $medium16;
+  }
+
+  &.group {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.check-box-app {
+  &__box {
+    display: none;
+  }
+
+  &__label {
+    &::before {
+      content: "";
+      background: transparent;
+      border: 1px solid $border-grey;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &__box:checked + &__label:before {
+    content: "";
+    background-color: $medium-orange;
+    background-image: url("/src/assets/icons/check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid $medium-orange;
+  }
+}

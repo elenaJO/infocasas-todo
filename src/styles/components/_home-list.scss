@@ -1,0 +1,30 @@
+.home-list {
+  background-color: $medium-blue;
+  border-radius: 8px;
+  height: 80%;
+  max-width: 530px;
+  padding: 25px;
+  width: 80%;
+
+  &__title {
+    color: #ffffff;
+    font-size: $large;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+
+  &__content-item {
+    height: calc(100% - 197px);
+    overflow-y: scroll;
+  }
+
+  &__content-button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    margin-right: 15px;
+    width: 100%;
+  }
+}
