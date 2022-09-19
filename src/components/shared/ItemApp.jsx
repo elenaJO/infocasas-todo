@@ -23,11 +23,7 @@ export const ItemApp = ({
         <span className="item-app__text">{title}</span>
       </div>
       <div className="item-app__container-button">
-        <BtnApp
-          image={imgUpdate}
-          optionalClass="mr-16"
-          handleClick={() => handleItem(id, title)}
-        />
+        <BtnApp image={imgUpdate} handleClick={() => handleItem(id, title)} />
         <BtnApp image={imgDelete} handleClick={() => handleItemDelete(id)} />
       </div>
     </div>

@@ -25,7 +25,7 @@ export const todoReducer = (initialState = [], action) => {
       if (action.payload.search.trim()) {
         const searchArray = [...action.payload.todosInit.current];
         return searchArray.filter((todo) =>
-          todo.title.includes(action.payload.search)
+          todo.title.toLowerCase().includes(action.payload.search.toLowerCase())
         );
       }
       return initialState;
