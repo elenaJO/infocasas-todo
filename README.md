@@ -20,6 +20,7 @@ Las actividades principales son:
 - Integración con el API para el listado de tareas.
 - Integración CRUD de las tareas.
 - Implementación de mejoras como desactivar el botón Agregar y orden de las actividades.
+- Se agrego el bundle que se solicito.
 
 ## PROYECTO
 
@@ -28,6 +29,8 @@ Para correr la web hacer:
 ### `npm install`
 
 ### `npm run dev`
+
+Ya se agrego en el repo las variables de entorno
 
 ## COMENTARIOS
 
